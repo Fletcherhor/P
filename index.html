@@ -2,11 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pirate</title>
+    <title>Walk the Plank!</title>
+    <script
+      src="https://kit.fontawesome.com/e547fd27f2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Welcome to Pirate Website!</h1>
-    <p>Change made by Danny</p>
+    <header style="background-color: brown">
+      <i class="fas fa-skull-crossbones" style="font-size: 90px"></i>
+      <h1 style="color: gold">Walk the Plank!</h1>
+    </header>
+    <div class="container">
+      <div class="meme_view">
+        <img src="https://i.redd.it/o8cz0b3yiif21.jpg" />
+      </div>
+      <div class="caption_form">
+        <input type="text" />
+      </div>
+      <div class="meme_button">
+        <button onclick="getMeme()">Get Meme</button>
+      </div>
+    </div>
+    <script src="meme.js"></script>
   </body>
 </html>
