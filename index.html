@@ -9,21 +9,37 @@
       src="https://kit.fontawesome.com/e547fd27f2.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header style="background-color: brown">
+    <header>
       <i class="fas fa-skull-crossbones" style="font-size: 90px"></i>
-      <h1 style="color: green">Walk the Plank!</h1>
+      <h1>Walk the Plank!</h1>
     </header>
     <div class="container">
-      <div class="meme_view">
-        <img src="https://i.redd.it/o8cz0b3yiif21.jpg" />
+      <div id="meme_view">
+        <img src="https://i.redd.it/o8cz0b3yiif21.jpg" width="600" height="600"/>
       </div>
+    </div>
+    <div class="setting">
       <div class="caption_form">
-        <input type="text" />
+        <input type="text" placeholder="Type your text that will be displayed on meme."/>
+        <label>Caption Border:</label>
+        <select id="border">
+          <option value = "1">None</option>
+          <option value = "2">Thin</option>
+          <option value = "3">Medium</option>
+          <option value = "4">Thick</option>
+        </select>
+        <label>Font:</label>
+        <select id = "font">
+          <option value = "1">Impact</option>
+          <option value = "2">Georgia</option>
+        </select>
       </div>
+    </div>
       <div class="meme_button">
-        <button onclick="getMeme()">Get Meme</button>
+        <button id="generate" onclick="getMeme()">Generate Meme</button>
       </div>
     </div>
     <script src="meme.js"></script>
