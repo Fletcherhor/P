@@ -7,9 +7,10 @@ const cors = require('cors')
 // implemented with express server 'app' 
 app.use(cors())
 app.get(':endpoint([\\/\\w\\.-]*)', function(req, res){
-    let endpoint = `http://alpha-meme-maker.herokuapp.com${req.params.endpoint}`
+    let endpoint = `http://alpha-meme-maker.herokuapp.com/memes${req.params.endpoint}`
     axios.get(endpoint).then(response =>{
-        res.send(response.data)
+        console.log(response.data.data)
+        res.send(response.data.data)
     }).catch(error => {
         res.json(error)
 
