@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/e547fd27f2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,12 +19,12 @@
     </header>
     <div class="container">
       <div id="meme_view">
-        <img src="https://i.redd.it/o8cz0b3yiif21.jpg" width="600" height="600"/>
+        <img src="https://i.redd.it/o8cz0b3yiif21.jpg" width="800" height="600" class="meme-image"/>
       </div>
     </div>
     <div class="setting">
       <div class="caption_form">
-        <input type="text" placeholder="Type your text that will be displayed on meme."/>
+        <input type="text" placeholder="Type caption here"/>
         <label>Caption Border:</label>
         <select id="border">
           <option value = "1">None</option>
@@ -39,9 +40,9 @@
       </div>
     </div>
       <div class="meme_button">
-        <button id="generate" onclick="getMeme()">Generate Meme</button>
+        <button id="generate" onclick="fetchMemeImage()">get new image</button>
       </div>
     </div>
-    <script src="meme.js"></script>
+    <script src="fetch.js"></script>
   </body>
 </html>
