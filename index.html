@@ -20,14 +20,14 @@
     <div class="container">
       <div id="meme_view">
         <img class="meme-image" src="https://i.redd.it/o8cz0b3yiif21.jpg" width="800" height="600"/>
-        <div class="top-left">Top Left</div>
-        <div class="bottom-left">Bottom Left</div>
+        <div class="top"></div>
+        <!-- <div class="bottom">Bottom</div> -->
       
       </div>
     </div>
     <div class="setting">
       <div class="caption_form">
-        <input type="text" placeholder="Type caption here"/>
+        <input id="user_input" type="text" placeholder="Type caption here"/>
         <label>Caption Border:</label>
         <select id="border">
           <option value = "1">None</option>
@@ -45,11 +45,15 @@
       <div class="meme_button">
         <button id="generate" onclick="fetchMemeImage()">get new image</button>
       </div>
+      <div class="submit_btn">
+        <button id="caption_btn" onclick="updateCaption()">caption image</button>
+      </div>
     </div>
     <div class="google-meme-search">
       <script async src="https://cse.google.com/cse.js?cx=3208bc6da88f335f1"></script>
       <div class="gcse-search"></div>
     </div>
     <script src="fetch.js"></script>
+    <script src="updateCaption.js"></script>
   </body>
 </html>

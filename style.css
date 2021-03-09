@@ -38,6 +38,16 @@ select {
   margin-top: 2em;
 }
 
+#caption_btn {
+  font-weight: 700;
+  background: yellowgreen;
+  padding: 1.2em 1.6em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2em;
+}
+
 input {
   display: block;
   padding: 0.8em 2em;
@@ -68,17 +78,18 @@ input {
 }
 
 /* Bottom left text */
-.bottom-left {
+.bottom {
   position: absolute;
   bottom: 200px;
-  left: 35px;
+  left: 350px;
   font-size: 3.5rem;
 }
 
 /* Top left text */
-.top-left {
+.top {
   position: absolute;
   top: 300px;
-  left: 35px;
+  left: 350px;
   font-size: 3.5rem;
+  color: white;
 }
