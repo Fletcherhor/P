@@ -30,7 +30,8 @@ select {
   float: left;
 }
 
-#generate, #caption_btn {
+#generate,
+#caption_btn {
   display: block;
   font-weight: 700;
   background: yellowgreen;
@@ -65,17 +66,16 @@ input {
 /* Bottom left text */
 .bottom {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: -50px;
+  left: 50px;
   font-size: 3.5rem;
 }
 
 /* Top left text */
 .top {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 320px;
+  left: 50px;
   font-size: 3.5rem;
   color: white;
 }
-

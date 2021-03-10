@@ -10,56 +10,81 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <i class="fas fa-skull-crossbones" style="font-size: 90px"></i>
       <h1>Walk the Plank!</h1>
     </header>
-    
+
     <div class="column">
       <div class="container">
         <div id="meme_view">
-          <img class="meme-image" src="https://i.redd.it/o8cz0b3yiif21.jpg" width="600" height="800"/>
+          <img
+            class="meme-image"
+            src="https://i.redd.it/o8cz0b3yiif21.jpg"
+            width="600"
+            height="800"
+          />
           <div class="top">top</div>
           <div class="bottom">bottom</div>
-          <input type="text" value="" class="searchInput" onchange="searchImage()" placeholder="Search image">
+          <input
+            type="text"
+            value=""
+            class="searchInput"
+            onchange="searchImage()"
+            placeholder="Search image"
+          />
           <button class="searchButton">Search</button>
         </div>
       </div>
     </div>
-    
-    
+
     <div class="column">
       <div class="setting">
         <div class="caption_form">
-          <input class="user_input" type="text" placeholder="Type top-caption here"/>
-          <input class="user_input" type="text" placeholder="Type down-caption here"/>
+          <input
+            id="user_input_top"
+            type="text"
+            placeholder="Type top-caption here"
+          />
+          <input
+            id="user_input_bottom"
+            type="text"
+            placeholder="Type down-caption here"
+          />
           <label>Caption Border:</label>
           <select id="border">
-            <option value = "1">None</option>
-            <option value = "2">Thin</option>
-            <option value = "3">Medium</option>
-            <option value = "4">Thick</option>
+            <option value="1">None</option>
+            <option value="2">Thin</option>
+            <option value="3">Medium</option>
+            <option value="4">Thick</option>
           </select>
           <label>Font:</label>
-          <select id = "font">
-            <option value = "1">Impact</option>
-            <option value = "2">Georgia</option>
+          <select id="font">
+            <option value="1">Impact</option>
+            <option value="2">Georgia</option>
           </select>
         </div>
         <div class="meme_button">
-          <button id="generate" onclick="fetchMemeImage()">get new image</button>
+          <button id="generate" onclick="fetchMemeImage()">
+            get new image
+          </button>
         </div>
         <div class="submit_btn">
-          <button id="caption_btn" onclick="updateCaption()">caption image</button>
+          <button id="caption_btn" onclick="updateCaption()">
+            caption image
+          </button>
         </div>
       </div>
     </div>
-    
+
     <div class="google-meme-search">
-      <script async src="https://cse.google.com/cse.js?cx=3208bc6da88f335f1"></script>
+      <script
+        async
+        src="https://cse.google.com/cse.js?cx=3208bc6da88f335f1"
+      ></script>
       <div class="gcse-search"></div>
     </div>
     <script src="fetch.js"></script>

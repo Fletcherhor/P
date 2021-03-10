@@ -1,11 +1,10 @@
 const topCaption = document.querySelector(".top");
-const inputBox = document.querySelector("#user_input");
+const bottomCaption = document.querySelector(".bottom")
+const inputBoxTop = document.querySelector("#user_input_top");
+const inputBoxBottom = document.querySelector("#user_input_bottom")
 
 function updateCaption(){
     console.log("updating caption")
-    console.log(topCaption)
-    console.log(inputBox)
-    console.log(topCaption.textContent)
-    console.log(inputBox.value)
-    topCaption.textContent = inputBox.value;
+    topCaption.textContent = inputBoxTop.value;
+    bottomCaption.textContent = inputBoxBottom.value;
 }
