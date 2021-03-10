@@ -3,6 +3,7 @@ header {
 }
 body {
   background: white;
+  margin: 0;
 }
 h1 {
   font-family: fantasy;
@@ -28,30 +29,20 @@ select {
   display: inline;
   float: left;
 }
-#generate {
-  font-weight: 700;
-  background: yellowgreen;
-  padding: 1.2em 1.6em;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 10px;
-  margin-top: 2em;
-}
 
-#caption_btn {
+#generate, #caption_btn {
+  display: block;
   font-weight: 700;
   background: yellowgreen;
   padding: 1.2em 1.6em;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
-  margin-top: 2em;
 }
 
 input {
   display: block;
   padding: 0.8em 2em;
-  width: 50%;
   font-size: 1.05em;
   margin: 1.2em 0em 0.8em 0em;
   border-radius: 5px;
@@ -59,16 +50,10 @@ input {
   border-style: solid;
 }
 
-.setting {
+.column {
   float: left;
-  width: 50%;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  float: left;
-  width: 50%;
+  width: 45%;
+  padding: 30px;
 }
 
 #meme-view {
@@ -80,16 +65,17 @@ input {
 /* Bottom left text */
 .bottom {
   position: absolute;
-  bottom: 200px;
-  left: 350px;
+  bottom: 8px;
+  left: 16px;
   font-size: 3.5rem;
 }
 
 /* Top left text */
 .top {
   position: absolute;
-  top: 300px;
-  left: 350px;
+  top: 8px;
+  left: 16px;
   font-size: 3.5rem;
   color: white;
 }
+
